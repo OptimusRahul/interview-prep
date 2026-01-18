@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int countDigit(int n) {
+    int count = 0;
+    while(n) {
+        count++;
+        n/=10;
+    }
+    return count;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    cout << n << endl;
+    return 0;
+}
